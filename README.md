@@ -1,4 +1,7 @@
 # Comp-Theory-Tasks
+
+**Completed by:** Levente Kalman G00392201
+
 ## Overview
 
 This repository contains Python implementations of various bit manipulation and hashing functions, as well as explanations for each task.</br>
@@ -79,27 +82,42 @@ Sorting arranges numbers in order from smallest to largest.</br>
 
 ### Task 6: Matrix Operations
 
-Matrices are tables of numbers, and this task performs operations on them.</br>
+Matrices are two-dimensional arrays of numbers, and this task performs basic operations on them.</br>
 
 #### Implemented Functions:
-- **matrix_transpose(matrix):** Flips a matrix so rows become columns and vice versa.
-- **matrix_multiplication(A, B):** Computes the product of two matrices.
+- **matrix_transpose(matrix):** Swaps the rows and columns of a matrix.
+    - Example:
+    ```
+    Input:  [[1, 2, 3], [4, 5, 6]]
+    Output: [[1, 4], [2, 5], [3, 6]]
+    ```
+- **matrix_multiplication(A, B):** Multiplies two matrices if the number of columns in `A` matches the number of rows in `B`.
+    - Example:
+    ```
+    A = [[1, 2], [3, 4]]
+    B = [[5, 6], [7, 8]]
+    A * B = [[19, 22], [43, 50]]
+    ```
 
 ### Task 7: Recursion Exercises
 
 Recursion is when a function calls itself to solve a problem step by step.</br>
 
 #### Implemented Functions:
-- **factorial(n):** Computes `n!` (e.g., `5! = 5 × 4 × 3 × 2 × 1 = 120`).
+- **factorial(n):** Computes `n!` 
+    - Example: `factorial(5) = 5 × 4 × 3 × 2 × 1 = 120`.
 - **fibonacci(n):** Computes the `n-th` Fibonacci number, where each number is the sum of the previous two.
+    - Example: `fibonacci(6) = 8` since the sequence is `0, 1, 1, 2, 3, 5, 8`.
 
 ### Task 8: File Handling
 
-This task works with files on your computer.</br>
+This task involves reading from and writing to text files.</br>
 
 #### Implemented Functions:
 - **read_file(filename):** Opens and prints the contents of a file.
+    - Example: If `file.txt` contains `"Hello World"`, calling `read_file("file.txt")` prints `"Hello World"`.
 - **write_file(filename, content):** Saves the provided text into a file.
+    - Example: `write_file("output.txt", "Sample Text")` saves `"Sample Text"` inside `output.txt`.
 
 ## Usage
 
