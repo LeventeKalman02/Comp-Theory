@@ -1,4 +1,4 @@
-# Comp-Theory
+# Comp-Theory-Tasks
 ## Overview
 
 This repository contains Python implementations of various bit manipulation and hashing functions, as well as explanations for each task.</br>
@@ -8,6 +8,8 @@ This repository contains Python implementations of various bit manipulation and 
 ### Task 1: Binary Representations
 
 This task involves creating Python functions to manipulate binary representations of numbers. The following functions are implemented:</br>
+
+#### Implemented Functions:
 
 1. rotl(x, n=1): Rotates the bits in a 32-bit unsigned integer to the left by `n` places.
     - Example: ``rotl(0b10101010101010101010101010101010, 3)  -> 0b1010101010101010101010101010101``
@@ -22,7 +24,12 @@ This task involves creating Python functions to manipulate binary representation
 
 This task involves converting a C-based hash function into Python and analyzing its characteristics.</br>
 
-- hash_function(s): Implements the following hash function in Python:
+#### Implemented Function:
+
+- kr_hash(s): Implements a simple hash function using modular arithmetic.
+
+#### Results:
+
 ```
 unsigned hash(char *s) {
     unsigned hashval;
@@ -31,7 +38,10 @@ unsigned hash(char *s) {
     return hashval % 101;
 }
 ```
-- The function is tested for correctness, and an explanation is provided on why the values 31 and 101 are used in the hashing process.</br>
+
+#### Explanation:
+
+- The hash function works by multiplying each character’s ASCII value by 31 and taking the result modulo 101. This ensures a uniform spread of hash values.</br>
 
 ## Usage
 
