@@ -54,7 +54,7 @@ This task focuses on operations related to strings.</br>
 - **reverse_string(s):** Flips a string backward. 
     - Example: `"hello"` becomes `"olleh"`.
 - **is_palindrome(s):** Checks if a word reads the same forward and backward. 
-    - Example: `"racecar"` returns `True`.
+    - Example: `"racecar"` returns `True`, while `"hello"` returns `False`.
 
 ### Task 4: Prime Number Verification
 
@@ -63,7 +63,7 @@ This task checks if numbers are prime and finds the next prime.</br>
 #### Implemented Functions:
 
 - **is_prime(n):** Checks if `n` is divisible only by 1 and itself.
-- **next_prime(n):** Finds the smallest prime number greater than `n`.
+- **next_prime(n):** Finds the smallest prime number greater than `n` by iterating through numbers and checking if they are prime.
 
 #### Results:
 ``First 10 primes found: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]``
@@ -74,9 +74,32 @@ Sorting arranges numbers in order from smallest to largest.</br>
 
 #### Implemented Functions:
 
-- **bubble_sort(arr):** Repeatedly swaps adjacent numbers if they are in the wrong order.
-- **quick_sort(arr):** Selects a pivot, moves smaller numbers to one side and larger numbers to the other, then repeats.
+- **bubble_sort(arr):** Repeatedly compares adjacent elements and swaps them if they are in the wrong order. This continues until the entire list is sorted.
+- **quick_sort(arr):** Selects a pivot element, partitions the array into smaller and larger values, and recursively sorts each part. This is a more efficient sorting method than bubble sort.
 
+### Task 6: Matrix Operations
+
+Matrices are tables of numbers, and this task performs operations on them.</br>
+
+#### Implemented Functions:
+- **matrix_transpose(matrix):** Flips a matrix so rows become columns and vice versa.
+- **matrix_multiplication(A, B):** Computes the product of two matrices.
+
+### Task 7: Recursion Exercises
+
+Recursion is when a function calls itself to solve a problem step by step.</br>
+
+#### Implemented Functions:
+- **factorial(n):** Computes `n!` (e.g., `5! = 5 × 4 × 3 × 2 × 1 = 120`).
+- **fibonacci(n):** Computes the `n-th` Fibonacci number, where each number is the sum of the previous two.
+
+### Task 8: File Handling
+
+This task works with files on your computer.</br>
+
+#### Implemented Functions:
+- **read_file(filename):** Opens and prints the contents of a file.
+- **write_file(filename, content):** Saves the provided text into a file.
 
 ## Usage
 
@@ -84,4 +107,4 @@ To run the functions, simply execute the Python script containing the code. Ensu
 
 ## Requirements
 - Python 3.x
-- No external libraries required
+- No external libraries required, all imports that are needed are included in the file.
